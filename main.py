@@ -1,9 +1,14 @@
 import sys
 import itertools
 
+crawled = []
+
 def inherits_from(c, index):
 	res = []
 	for a in c[index]:
+		if a in crawled:
+			continue
+		crawled.append(a)
 		if c[a] == []:
 			res += [a]
 			#print res , ' -- limiting'
