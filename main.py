@@ -28,7 +28,7 @@ for tc in xrange(1, int(sys.stdin.readline())+1):
    except IndexError:
 	classes[i+1] = []
    classes[i+1] = c
-  print classes
+  #print classes
   for x in classes:
 	if classes[x] == []:
 		continue
